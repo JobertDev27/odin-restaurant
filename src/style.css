@@ -1,3 +1,98 @@
+:root {
+    --black: #000000dc;
+}
+
+h1 {
+    margin: 0;
+    padding-left: 20px;
+}
+
 body {
-    background-color: rebeccapurple;
+    margin: 0;
+    background-image: url("images/bg.jpg");
+    background-size: 100vw 100vh;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: whitesmoke;
+}
+
+header {
+    display: grid;
+    position: fixed;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--black);
+    width: 100vw;
+    height: 100px;
+    margin: 0;
+    align-items: center;
+}
+
+header button {
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    gap: 30px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 150px 50px 50px;
+    
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    background-color: var(--black);
+}
+
+.menu-item img {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+}
+
+.menu-item p {
+    max-width: 350px;
+    margin-top: 30px;
+}
+
+.price {
+    color: greenyellow;
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.contact-container {
+    background-color: var(--black);
+    width: 20vw;
+    height: 40vh;
+    padding-left: 30px;
+}
+
+.landpage {
+    background-color: var(--black);
+    height: 70vh;
+    padding-left: 20px;
+}
+
+.landpage p {
+    max-width: 400px;
+    margin: 20px;
+    font-size: 20px;
 }
